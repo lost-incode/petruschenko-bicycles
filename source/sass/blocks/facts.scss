@@ -1,0 +1,58 @@
+.facts {
+  padding: 150px 0 131px 0;
+}
+
+.facts__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: $basic-dark;
+  align-items: center;
+  max-width: max-content;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.facts__list {
+  counter-reset: num;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 38px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.facts__item {
+  counter-increment: num;
+  position: relative;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  padding-top: 65px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: $basic-black;
+  width: 263px;
+}
+
+.facts__item::before {
+  content: counter(num) ".";
+  color: $basic-blue;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  text-align: right;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.3px;
+}
+
+.facts__item:nth-child(-n+9)::before {
+  content: "0" counter(num);
+}
