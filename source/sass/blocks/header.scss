@@ -1,0 +1,33 @@
+.header {
+  padding-bottom: 240px;
+  background-color: $basic-dark;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/header-bg@1x.jpg");
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 194px;
+}
+
+.header__title {
+  margin: 30px 0 24px 0;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  color: $basic-white;
+  max-width: 400px;
+}
+
+.header__subtitle {
+  max-width: 365px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: $subtitle-gray;
+}

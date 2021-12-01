@@ -1,0 +1,44 @@
+.match-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.match-form__subtitle {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: $basic-white;
+  margin: 0;
+  text-align: center;
+}
+
+.match-form__input {
+  padding: 14px 29px 10px 29px;
+  background: $basic-white;
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.match-form__input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: $placeholder-color;
+}
+
+.match-form__submit {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: $basic-black;
+  padding: 16px;
+  border: 0;
+  background: $basic-blue;
+  border-radius: 6px;
+}

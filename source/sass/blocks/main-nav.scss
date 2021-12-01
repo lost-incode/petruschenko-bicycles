@@ -1,0 +1,17 @@
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 135px;
+  margin: 0;
+  padding: 21px 0 10px 0;
+  margin-bottom: 256px;
+}
+
+.main-nav__item {
+  letter-spacing: -0.01em;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: $basic-gray;
+}
