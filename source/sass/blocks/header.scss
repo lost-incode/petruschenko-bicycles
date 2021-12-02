@@ -52,10 +52,14 @@
   margin-left: auto;
 
   @media (max-width: $tablet-width-only) {
-    width: min-content;
+    width: max-content;
     padding-top: 134px;
     display: block;
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: $mobile-width;
   }
 }
 

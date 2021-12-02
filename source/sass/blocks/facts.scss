@@ -16,6 +16,12 @@
   max-width: max-content;
   margin: 0 auto;
   margin-bottom: 50px;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
 }
 
 .facts__list {
@@ -44,6 +50,11 @@
   letter-spacing: -0.5px;
   color: $basic-black;
   width: 263px;
+
+  @media (max-width: $tablet-width-only) {
+    row-gap: 40px;
+    font-size: 18px;
+  }
 }
 
 .facts__item::before {

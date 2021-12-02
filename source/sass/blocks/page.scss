@@ -19,6 +19,10 @@
   @media (max-width: $tablet-width-only) {
     width: $tablet-width;
   }
+
+  @media (max-width: $mobile-width-only) {
+    width: $mobile-width;
+  }
 }
 
 .page__container--header {
