@@ -1,0 +1,30 @@
+.video {
+  background: linear-gradient($video-bg-color 75%, transparent 0);
+  padding-top: 120px;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+}
+
+.video__title {
+  color: $basic-white;
+  margin: 0 auto;
+}
+
+.video__subtitle {
+  margin: 20px auto 56px auto;
+  max-width: 343px;
+  color: $basic-gray;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__image {
+  display: block;
+  margin: 0 auto;
+}
