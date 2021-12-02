@@ -10,12 +10,23 @@
 <body class="page__body">
   <header class="header">
     <div class="page__container page__container--header">
-      <nav class="header__nav main-nav">
+      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button" hidden="">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">О нас</li>
-          <li class="main-nav__item">Виды велосипедов</li>
-          <li class="main-nav__item">Видео про велосипеды</li>
-          <li class="main-nav__item">Контакты</li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Виды велосипедов</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Видео про велосипеды</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
       <div class="header__wrapper">
@@ -54,5 +65,7 @@
     </div>
   </main>
 
+
+<script src="js/script.js"></script>
 </body>
 </html>

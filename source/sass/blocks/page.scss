@@ -20,4 +20,8 @@
 .page__container--header {
   width: 880px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+  }
 }
