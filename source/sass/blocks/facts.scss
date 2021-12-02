@@ -1,5 +1,9 @@
 .facts {
   padding: 150px 0 131px 0;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 35px 0 70px 0;
+  }
 }
 
 .facts__title {
@@ -23,6 +27,10 @@
   column-gap: 38px;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (max-width: $tablet-width-only) {
+    row-gap: 40px;
+  }
 }
 
 .facts__item {

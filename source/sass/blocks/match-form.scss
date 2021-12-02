@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+
+
+  @media (max-width: $tablet-width-only) {
+    row-gap: 30px;
+  }
 }
 
 .match-form__subtitle {
@@ -12,6 +17,12 @@
   color: $basic-white;
   margin: 0;
   text-align: center;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 18px;
+    line-height: 28px;
+    color: $basic-black;
+  }
 }
 
 .match-form__input {
