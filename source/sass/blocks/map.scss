@@ -5,6 +5,10 @@
     font-size: 24px;
     line-height: 30px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 18px;
+  }
 }
 
 .map__subtitle {
@@ -20,6 +24,10 @@
     margin: 20px auto;
     max-width: max-content;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 20px auto 25px auto;
+  }
 }
 
 .map__image {
@@ -30,5 +38,10 @@
     width: 690px;
     height: 545px;
     object-fit: cover;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 250px;
   }
 }

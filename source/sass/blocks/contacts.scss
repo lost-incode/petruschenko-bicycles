@@ -2,6 +2,12 @@
   width: max-content;
   display: flex;
   column-gap: 90px;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    row-gap: 22px;
+    align-items: center;
+  }
 }
 
 .contacts__link {
@@ -36,7 +42,7 @@
 }
 
 .contacts__link--mail::before {
-  top: 6px;
+  top: 1px;
   left: 0;
   width: 26px;
   height: 20px;
@@ -44,7 +50,7 @@
 }
 
 .contacts__link--phone::before {
-  top: 4px;
+  top: 0;
   left: 0;
   width: 22px;
   height: 23px;
