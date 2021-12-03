@@ -1,5 +1,9 @@
 .footer {
   padding: 75px 0 98px 0;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 35px 0 53px 0;
+  }
 }
 
 .footer__contacts {

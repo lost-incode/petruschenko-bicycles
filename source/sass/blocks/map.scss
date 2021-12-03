@@ -1,5 +1,10 @@
 .map__title {
   margin: 0 auto;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .map__subtitle {
@@ -10,9 +15,20 @@
   font-size: 17px;
   line-height: 31px;
   color: $subtitle-map-color;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 20px auto;
+    max-width: max-content;
+  }
 }
 
 .map__image {
   display: block;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width-only) {
+    width: 690px;
+    height: 545px;
+    object-fit: cover;
+  }
 }
