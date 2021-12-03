@@ -1,14 +1,24 @@
 .types {
   padding: 149px 0 147px 0;
   background-color: $background-page-color;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 50px 0 70px 0;
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .types__title {
+  font-size: 30px;
+  line-height: 30px;
   margin: 0 auto;
   margin-bottom: 51px;
 
   @media (max-width: $tablet-width-only) {
     margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 41px;
   }
 }
 
@@ -30,10 +40,27 @@
 
 .types__item--road {
   padding-top: 10px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 0;
+  }
 }
 
 .types__item--mountain {
   padding-top: 39px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 0;
+  }
+}
+
+.types__item--childish {
+  padding-top: 39px;
+  margin-top: 30px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 20px;
+  }
 }
 
 .types__image-title {
@@ -43,4 +70,14 @@
   line-height: 34px;
   letter-spacing: -0.5px;
   color: $basic-black;
+}
+
+.types__image {
+  border-radius: 10px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
