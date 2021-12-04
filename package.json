@@ -23,7 +23,8 @@
     "gulp-svg-sprite": "^1.5.0",
     "posthtml-include": "^1.2.0",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "gulp-terser": "^2.0.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

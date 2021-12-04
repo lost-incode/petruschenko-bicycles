@@ -21,11 +21,15 @@
   column-gap: 194px;
   row-gap: 256px;
   background-color: $basic-dark;
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../../img/header-bg@1x.jpg");
   padding-bottom: 240px;
+
+  @supports (background-image: url("../../img/header-bg@1x.webp")) {
+    background-image: url("../../img/header-bg@1x.webp");
+  }
 
   @media (max-width: $tablet-width-only) {
     display: block;
