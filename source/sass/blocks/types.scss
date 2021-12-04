@@ -41,6 +41,7 @@
 }
 
 .types__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -54,6 +55,40 @@
   }
 }
 
+.types__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: $basic-blue;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: 50% 50%;
+}
+
+.types__item--road::before {
+  z-index: 9;
+  mask-image: url("../img/stack.svg#ellipse-1");
+
+  @media (min-width: $mobile-width) {
+    bottom: 27px;
+    left: -36px;
+    width: 127px;
+    height: 127px;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 27px;
+    left: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 156px;
+    left: -60px;
+    width: 180px;
+    height: 180px;
+  }
+}
+
 .types__item--mountain {
   padding-top: 39px;
 
@@ -62,9 +97,38 @@
   }
 }
 
+.types__item--mountain::before {
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    left: -19px;
+    z-index: 11;
+    width: 47px;
+    height: 47px;
+    mask-image: url("../img/stack.svg#rectangle-1");
+  }
+}
+
+.types__item--mountain::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $basic-blue;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: 50% 50%;
+    bottom: 30px;
+    right: -20px;
+    z-index: 11;
+    width: 47px;
+    height: 47px;
+    mask-image: url("../img/stack.svg#rectangle-1");
+  }
+}
+
 .types__item--childish {
-  padding-top: 39px;
-  margin-top: 30px;
+  // padding-top: 39px;
+  // margin-top: 30px;
 
   @media (max-width: $tablet-width-only) {
     padding-top: 20px;
@@ -73,6 +137,30 @@
   @media (max-width: $mobile-width-only) {
     padding-top: 0;
     margin-top: 0;
+  }
+}
+
+.types__item--childish::before {
+  z-index: 11;
+  mask-image: url("../img/stack.svg#ellipse-1");
+
+  @media (min-width: $mobile-width) {
+    top: -15px;
+    right: -12px;
+    width: 68px;
+    height: 68px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 1px;
+    right: -26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -32px;
+    right: -36px;
+    width: 95px;
+    height: 95px;
   }
 }
 
@@ -87,6 +175,7 @@
 
 .types__image {
   border-radius: 10px;
+  z-index: 10;
 
   @media (max-width: $tablet-width-only) {
     width: 270px;
