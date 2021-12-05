@@ -34,10 +34,7 @@
   justify-content: center;
   column-gap: 50px;
   list-style: none;
-
-  @media (max-width: $mobile-width-only) {
-    row-gap: 40px;
-  }
+  row-gap: 40px;
 }
 
 .types__item {

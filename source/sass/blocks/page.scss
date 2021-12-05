@@ -16,6 +16,10 @@
   width: 1230px;
   margin: 0 auto;
 
+  @media (max-width: $desktop-width + 206px) {
+    width: 1024px;
+  }
+
   @media (max-width: $tablet-width-only) {
     width: $tablet-width;
   }

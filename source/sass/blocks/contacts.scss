@@ -3,6 +3,8 @@
   display: flex;
   column-gap: 90px;
   flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;

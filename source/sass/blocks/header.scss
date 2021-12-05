@@ -1,9 +1,8 @@
 .header {
-  padding-bottom: 240px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.9fr;
   grid-template-rows: min-content min-content;
-  column-gap: 194px;
+  column-gap: 160px;
   row-gap: 256px;
 
   @media (max-width: $tablet-width-only) {
@@ -13,25 +12,28 @@
 }
 
 .header__container {
-  grid-column: 1 / -1;
   grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-items: flex-start;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
-  column-gap: 194px;
+  column-gap: 160px;
   row-gap: 256px;
   background-color: $basic-dark;
-  background-position: center;
+  background-position: 35% 40%;
   background-repeat: no-repeat;
   background-size: cover;
+  // background-color: red;
   background-image: url("../../img/header-bg@1x.jpg");
-  padding-bottom: 240px;
+  padding-bottom: 215px;
 
   @supports (background-image: url("../../img/header-bg@1x.webp")) {
     background-image: url("../../img/header-bg@1x.webp");
   }
 
   @media (max-width: $tablet-width-only) {
+    background-position: center;
     display: block;
     padding-bottom: 80px;
   }
@@ -40,8 +42,9 @@
 .header__nav {
   grid-column: 1 / -1;
   grid-row: 1;
-  width: 880px;
+  width: 875px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width-only) {
     width: 100%;
@@ -111,7 +114,7 @@
   grid-column: 2;
   grid-row: 2;
   max-width: 327px;
-  padding-bottom: 240px;
+  padding-bottom: 280px;
 
   @media (max-width: $tablet-width-only) {
     padding: 0;

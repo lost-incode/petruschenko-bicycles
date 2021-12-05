@@ -55,7 +55,7 @@
   list-style: none;
   column-gap: 135px;
   margin: 0;
-  padding: 21px 0 10px 0;
+  padding: 21px 12px 10px 19px;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width-only) {
@@ -73,6 +73,10 @@
 }
 
 .main-nav__item {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+
   @media (max-width: $tablet-width-only) {
     width: 100%;
     box-sizing: border-box;

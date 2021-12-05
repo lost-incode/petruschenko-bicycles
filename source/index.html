@@ -13,25 +13,28 @@
 <body class="page__body">
   <header class="header">
     <div class="header__container">
+      <!-- класс main-nav--closed соответствует закрытому состоянию меню  -->
+      <!-- класс main-nav--opened соответствует открытому состоянию меню  -->
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" hidden>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">О нас</a>
+            <a class="main-nav__link" href="#about-us">О нас</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Виды велосипедов</a>
+            <a class="main-nav__link" href="#types">Виды велосипедов</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Видео про велосипеды</a>
+            <a class="main-nav__link" href="#video">Видео про велосипеды</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+            <a class="main-nav__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
+      <a name="about-us"></a>
       <div class="header__wrapper-left">
         <a href="#" class="header__logo">
           <span class="visually-hidden">Ссылка на главную страницу сайта</span>
@@ -42,18 +45,17 @@
       </div>
     </div>
 
-      <form class="header__form match-form" action="#" method="get">
-        <p class="match-form__subtitle">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+    <form class="header__form match-form" action="#" method="get">
+      <p class="match-form__subtitle">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
 
-        <label class="visually-hidden" for="name">Имя</label>
-        <input class="match-form__input" type="text" placeholder="Введите ваше имя" name="name" id="name">
+      <label class="visually-hidden" for="name">Имя</label>
+      <input class="match-form__input" type="text" placeholder="Введите ваше имя" name="name" id="name">
 
-        <label class="visually-hidden" for="phone">Телефон</label>
-        <input class="match-form__input" type="tel" placeholder="Введите ваш номер телефона" name="phone" id="phone" pattern="[0-9]{10}">
+      <label class="visually-hidden" for="phone">Телефон</label>
+      <input class="match-form__input" type="tel" placeholder="Введите ваш номер телефона" name="phone" id="phone" pattern="[0-9]{10}">
 
-        <button class="match-form__submit" type="submit">Подобрать велосипед мечты</button>
-      </form>
-    <!-- </div> -->
+      <button class="match-form__submit" type="submit">Подобрать велосипед мечты</button>
+    </form>
   </header>
 
   <main class="page__main">
@@ -70,6 +72,7 @@
     </div>
 
       <section class="types">
+        <a name="types"></a>
         <div class="page__container">
           <h2 class="section-title types__title">Виды велосипедов</h2>
           <ul class="types__list">
@@ -89,7 +92,7 @@
             </li>
             <li class="types__item types__item--childish">
               <picture>
-                <source type="image/webp" srcset="img/photo-2@1x.webp 1x, img/photo-2@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-3@1x.webp 1x, img/photo-3@2x.webp 2x">
                 <img src="img/photo-3@1x.jpg" srcset="img/photo-3@2x.jpg 2x"  alt="Фото детского розового велосипеда с корзиной на фоне стены" class="types__image" width="342" height="513" loading="lazy">
               </picture>
               <span class="types__image-title">Детский велосипед</span>
@@ -99,6 +102,7 @@
       </section>
 
       <section class="video">
+        <a name="video"></a>
         <div class="page__container">
           <h2 class="section-title video__title">Видео про велосипеды</h2>
           <p class="video__subtitle">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
@@ -128,6 +132,7 @@
     </section>
 
     <div class="page__container">
+      <a name="contacts"></a>
       <div class="footer__contacts contacts">
         <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__link contacts__link--mail">puteshestviemechta@gmail.ru</a>
         <a href="tel:+7(499)-784-684-46" class="contacts__link contacts__link--phone">+7 (499) -784-684-46</a>

@@ -24,10 +24,7 @@
   column-gap: 38px;
   flex-wrap: wrap;
   justify-content: center;
-
-  @media (max-width: $tablet-width-only) {
-    row-gap: 40px;
-  }
+  row-gap: 40px;
 }
 
 .facts__item {
@@ -49,7 +46,7 @@
 }
 
 .facts__item::before {
-  content: counter(num) ".";
+  content: counter(num);
   color: $basic-blue;
   position: absolute;
   left: 50%;
