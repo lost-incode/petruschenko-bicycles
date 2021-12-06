@@ -102,6 +102,15 @@
     font-size: 20px;
     padding: 17px 16px 17px 18px;
   }
+
+  &:hover {
+    color: $basic-blue;
+  }
+
+  &:active {
+    color: $basic-blue;
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $tablet-width-only) {
