@@ -1,10 +1,11 @@
 .contacts {
   width: max-content;
   display: flex;
-  column-gap: 90px;
+  column-gap: 92px;
   flex-wrap: wrap;
   max-width: 100%;
   justify-content: center;
+  align-items: center;
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
@@ -18,7 +19,7 @@
   position: relative;
   font-weight: normal;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 22px;
   color: $footer-text-color;
 
   @media (max-width: $tablet-width-only) {
@@ -27,7 +28,7 @@
 }
 
 .contacts__link--mail {
-  padding-left: 41px;
+  padding-left: 25px;
 }
 
 .contacts__link--phone {
@@ -45,8 +46,8 @@
 }
 
 .contacts__link--mail::before {
-  top: 1px;
-  left: 0;
+  top: 3px;
+  left: -15px;
   width: 26px;
   height: 20px;
   mask-image: url("../img/stack.svg#mail");

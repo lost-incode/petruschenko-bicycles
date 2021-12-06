@@ -1,5 +1,5 @@
 .video {
-  background: linear-gradient($video-bg-color 75%, transparent 0);
+  background: linear-gradient($video-bg-color 80%, transparent 0);
   padding-top: 120px;
   padding-bottom: 75px;
   box-sizing: border-box;
@@ -32,6 +32,7 @@
   font-size: 16px;
   line-height: 28px;
   text-align: center;
+  letter-spacing: -0.01em;
 
   @media (max-width: $tablet-width-only) {
     margin-bottom: 40px;
