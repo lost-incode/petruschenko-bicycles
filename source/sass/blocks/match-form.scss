@@ -52,6 +52,12 @@
   }
 }
 
+.match-form__input:hover,
+.match-form__input:focus {
+  border: 1px solid $basic-blue;
+  background: $basic-border-blue;
+}
+
 .match-form__input::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
@@ -71,4 +77,13 @@
   border: 0;
   background: $basic-blue;
   border-radius: 6px;
+}
+
+.match-form__submit:hover {
+  opacity: 0.7;
+}
+
+.match-form__submit:active {
+  opacity: 1;
+  background-color: $basic-submit-blue;
 }

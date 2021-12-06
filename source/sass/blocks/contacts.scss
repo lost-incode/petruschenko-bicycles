@@ -35,6 +35,15 @@
   }
 }
 
+.contacts__link:hover {
+  color: $basic-blue;
+}
+
+.contacts__link:active {
+  color: $basic-blue;
+  opacity: 0.5;
+}
+
 .contacts__link--phone {
   padding-left: 37px;
 
