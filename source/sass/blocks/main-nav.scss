@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("/img/stack.svg#menu-closed");
+    background-image: url("../img/stack.svg#menu-closed");
   }
 
   .main-nav--opened .main-nav__toggle {
@@ -45,7 +45,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("/img/stack.svg#menu-opened");
+    background-image: url("../img/stack.svg#menu-opened");
   }
 }
 
