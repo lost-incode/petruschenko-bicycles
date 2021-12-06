@@ -4,7 +4,7 @@
   row-gap: 20px;
 
   @media (max-width: $tablet-width-only) {
-    row-gap: 30px;
+    row-gap: 21px;
   }
 }
 
@@ -19,6 +19,8 @@
   text-align: center;
 
   @media (max-width: $tablet-width-only) {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 18px;
     line-height: 28px;
     color: $basic-black;
@@ -26,11 +28,15 @@
 }
 
 .match-form__input {
-  padding: 15px 29px 15px 29px;
+  padding: 15px 29px;
   background: $basic-white;
   border: 1px solid $border-color;
   box-sizing: border-box;
   border-radius: 6px;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 15px 20px;
+  }
 }
 
 .match-form__input::placeholder {

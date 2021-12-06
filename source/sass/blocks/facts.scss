@@ -2,7 +2,7 @@
   padding: 150px 0 151px 0;
 
   @media (max-width: $tablet-width-only) {
-    padding: 35px 0 70px 0;
+    padding: 32px 0 70px 0;
   }
 }
 
@@ -25,6 +25,10 @@
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 40px;
+
+  @media (max-width: $tablet-width-only) {
+    column-gap: 31px;
+  }
 }
 
 .facts__item {
@@ -41,7 +45,8 @@
 
   @media (max-width: $tablet-width-only) {
     row-gap: 40px;
-    font-size: 18px;
+    padding-top: 55px;
+    // font-size: 18px;
   }
 }
 

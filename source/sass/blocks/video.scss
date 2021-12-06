@@ -5,7 +5,8 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-width-only) {
-    padding-top: 70px;
+    background: linear-gradient($video-bg-color 77%, transparent 0);
+    padding-top: 64px;
     padding-bottom: 35px;
   }
 
@@ -35,6 +36,8 @@
   letter-spacing: -0.01em;
 
   @media (max-width: $tablet-width-only) {
+    max-width: 480px;
+    margin-top: 15px;
     margin-bottom: 40px;
   }
 
