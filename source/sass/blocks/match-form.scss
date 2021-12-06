@@ -6,6 +6,11 @@
   @media (max-width: $tablet-width-only) {
     row-gap: 21px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    row-gap: 20px;
+    padding: 0 16px;
+  }
 }
 
 .match-form__subtitle {
@@ -25,6 +30,10 @@
     line-height: 28px;
     color: $basic-black;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 0;
+  }
 }
 
 .match-form__input {
@@ -36,6 +45,10 @@
 
   @media (max-width: $tablet-width-only) {
     padding: 15px 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 25px;
   }
 }
 

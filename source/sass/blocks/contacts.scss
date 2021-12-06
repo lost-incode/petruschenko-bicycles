@@ -29,10 +29,18 @@
 
 .contacts__link--mail {
   padding-left: 25px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 45px;
+  }
 }
 
 .contacts__link--phone {
   padding-left: 37px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 25px;
+  }
 }
 
 .contacts__link::before {
@@ -51,6 +59,10 @@
   width: 26px;
   height: 20px;
   mask-image: url("../img/stack.svg#mail");
+
+  @media (max-width: $mobile-width-only) {
+    left: 5px;
+  }
 }
 
 .contacts__link--phone::before {
@@ -59,4 +71,8 @@
   width: 22px;
   height: 23px;
   mask-image: url("../img/stack.svg#phone");
+
+  @media (max-width: $mobile-width-only) {
+    left: -12px;
+  }
 }

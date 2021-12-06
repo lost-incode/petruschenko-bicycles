@@ -11,6 +11,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    background: linear-gradient($video-bg-color 82%, transparent 0);
     padding-top: 84px;
   }
 }
@@ -42,7 +43,9 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    letter-spacing: -0.03em;
     margin-bottom: 50px;
+    margin-top: 20px;
   }
 }
 

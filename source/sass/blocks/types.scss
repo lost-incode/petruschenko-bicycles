@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 52px;
+    padding-bottom: 55px;
   }
 }
 
@@ -38,6 +38,10 @@
 
   @media (max-width: $tablet-width-only) {
     row-gap: 30px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    row-gap: 45px;
   }
 }
 
@@ -72,8 +76,8 @@
   mask-image: url("../img/stack.svg#ellipse-1");
 
   @media (min-width: $mobile-width) {
-    bottom: 27px;
-    left: -36px;
+    bottom: 25px;
+    left: -26px;
     width: 127px;
     height: 127px;
   }
@@ -146,8 +150,8 @@
   mask-image: url("../img/stack.svg#ellipse-2");
 
   @media (min-width: $mobile-width) {
-    top: -15px;
-    right: -12px;
+    top: -20px;
+    right: -15px;
     width: 68px;
     height: 68px;
   }
@@ -185,7 +189,9 @@
 }
 
 .types__item--childish > .types__image-title {
-  margin-top: 12px;
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+  }
 }
 
 .types__image {
