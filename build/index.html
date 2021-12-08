@@ -46,17 +46,22 @@
       </div>
 
 
-    <form class="header__form match-form" action="#" method="get">
-      <p class="match-form__subtitle">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-
-      <label class="visually-hidden" for="name">Имя</label>
-      <input class="match-form__input" type="text" placeholder="Введите ваше имя" name="name" id="name">
-
-      <label class="visually-hidden" for="phone">Телефон</label>
-      <input class="match-form__input" type="tel" placeholder="Введите ваш номер телефона" name="phone" id="phone" pattern="[0-9]{10}">
-
-      <button class="match-form__submit" type="submit">Подобрать велосипед мечты</button>
-    </form>
+      <div class="header__form match-form">
+        <form action="#" method="get">
+          <p class="match-form__subtitle">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+  
+          <div class="match-form__input-wrapper">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input type="text" placeholder="Введите ваше имя" name="name" id="name">
+          </div>
+  
+          <div class="match-form__input-wrapper">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input type="tel" placeholder="Введите ваш номер телефона" name="phone" id="phone" pattern="[0-9]{10}">
+          </div>
+          <button class="match-form__submit" type="submit">Подобрать велосипед мечты</button>
+        </form>
+      </div>
   </div>
   </header>
 
@@ -81,7 +86,6 @@
             <li class="types__item types__item--road">
               <picture>
                 <source type="image/webp" srcset="img/photo-1@1x.webp 1x, img/photo-1@2x.webp 2x">
-                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/photo-1@1x.jpg" srcset="img/photo-1@2x.jpg 2x" alt="Белый велосипед с корзиной на фоне стены" class="types__image" width="342" height="503" loading="lazy">
               </picture>
                 <span class="types__image-title">Дорожный велосипед</span>
@@ -89,7 +93,6 @@
             <li class="types__item types__item--mountain">
               <picture>
                 <source type="image/webp" srcset="img/photo-2@1x.webp 1x, img/photo-2@2x.webp 2x">
-                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/photo-2@1x.jpg" srcset="img/photo-2@2x.jpg 2x" alt="Фото велосипеда на вершине горы" class="types__image" width="342" height="566" loading="lazy">
               </picture>
               <span class="types__image-title">Горный велосипед</span>
@@ -97,7 +100,6 @@
             <li class="types__item types__item--childish">
               <picture>
                 <source type="image/webp" srcset="img/photo-3@1x.webp 1x, img/photo-3@2x.webp 2x">
-                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/photo-3@1x.jpg" srcset="img/photo-3@2x.jpg 2x" alt="Фото детского розового велосипеда с корзиной на фоне стены" class="types__image" width="342" height="513" loading="lazy">
               </picture>
               <span class="types__image-title">Детский велосипед</span>
@@ -114,7 +116,6 @@
           <div class="video__wrapper">
             <picture>
               <source type="image/webp" srcset="img/video-bg@1x.webp 1x, img/video-bg@1x.webp 2x">
-              <!-- 1х: 929px; 2x: 1858px -->
               <img class="video__image" src="img/video-bg@1x.jpg" srcset="img/video-bg@2x.jpg 2x" alt="Черный шоссейный велосипед на черном фоне" width="929" height="522" loading="lazy">
             </picture>
             <a class="video__play" href="#">
@@ -133,7 +134,6 @@
       </div>
       <picture>
         <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@1x.webp 2x">
-        <!-- 1х: 950px; 2x: 1900px -->
         <img src="img/map@1x.png" srcset="img/map@2x.png 2x" alt="Изображение карты" class="map__image" width="950" height="530" loading="lazy">
       </picture>
     </section>
@@ -147,6 +147,6 @@
     </div>
   </footer>
 
-<script src="js/script.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
