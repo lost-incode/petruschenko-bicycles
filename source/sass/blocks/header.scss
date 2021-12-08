@@ -4,11 +4,11 @@
   background-position: 35% 40%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../img/header-bg@1x.jpg");
+  background-image: url("../img/header-bg@1x.jpg");
   padding-bottom: 220px;
 
-  @supports (background-image: url("../../img/header-bg@1x.webp")) {
-    background-image: url("../../img/header-bg@1x.webp");
+  @supports (background-image: url("../img/header-bg@1x.webp")) {
+    background-image: url("../img/header-bg@1x.webp");
   }
 
   @media (max-width: $tablet-width-only) {
