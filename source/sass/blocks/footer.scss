@@ -1,4 +1,6 @@
 .footer {
+  position: sticky;
+  top: 100vh;
   padding: 75px 0 98px 0;
 
   @media (max-width: $tablet-width-only) {

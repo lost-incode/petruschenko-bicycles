@@ -62,10 +62,10 @@
     display: block;
     column-gap: 0;
     position: absolute;
+    height: 100vh;
     top: 0;
     right: 0;
     width: 100%;
-    height: min-content;
     background-color: $basic-white;
     z-index: 10;
     padding: 0;
