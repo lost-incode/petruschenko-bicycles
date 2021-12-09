@@ -75,8 +75,6 @@
 
 .main-nav__item {
   display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
 
   @media (max-width: $tablet-width-only) {
     width: 100%;
