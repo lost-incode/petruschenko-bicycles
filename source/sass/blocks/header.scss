@@ -93,6 +93,14 @@
   }
 }
 
+.header__logo[href] {
+  cursor: pointer;
+}
+
+.header__logo[href]:hover {
+  opacity: 0.5;
+}
+
 .header__title {
   margin: 27px 0 24px 0;
   font-weight: bold;
