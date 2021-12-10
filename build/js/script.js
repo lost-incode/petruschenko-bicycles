@@ -1,39 +1,12 @@
 'use strict';
-var matchForm = document.querySelector(".match-form form");
-var matchSubmitButton = matchForm.querySelector(".match-form__submit");
-var matchName = matchForm.querySelector("#name");
-var matchPhone = matchForm.querySelector("#phone");
+
+var matchForm = document.querySelector('.match-form form');
+var matchName = matchForm.querySelector('#name');
+var matchPhone = matchForm.querySelector('#phone');
+
 var body = document.querySelector('.page__body');
-
-var isStorageSupport = true;
-var storageName = "";
-var storagePhone = "";
-
-try {
-  storageName = localStorage.getItem("matchName");
-  storagePhone = localStorage.getItem("matchPhone");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-window.addEventListener("load", function() {
-  if (storageName) {
-    matchName.value = storageName;
-  }
-  
-  if (storagePhone) {
-    matchPhone.value = storagePhone;
-  }
-});
-
-matchForm.addEventListener("submit", function (evt) {
-  if (isStorageSupport) {
-    localStorage.setItem("matchName", matchName.value);
-    localStorage.setItem("matchPhone", matchPhone.value);
-  }
-});
-
 var navMain = document.querySelector('.main-nav');
+
 var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
@@ -60,4 +33,32 @@ smoothLinks.forEach(function (smoothLink) {
     navMain.classList.toggle('main-nav--opened');
     body.classList.toggle('overflow-hidden');
   });
+});
+
+var isStorageSupport = true;
+var storageName = '';
+var storagePhone = '';
+
+try {
+  storageName = localStorage.getItem('matchName');
+  storagePhone = localStorage.getItem('matchPhone');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+window.addEventListener('load', function () {
+  if (storageName) {
+    matchName.value = storageName;
+  }
+
+  if (storagePhone) {
+    matchPhone.value = storagePhone;
+  }
+});
+
+matchForm.addEventListener('submit', function () {
+  if (isStorageSupport) {
+    localStorage.setItem('matchName', matchName.value);
+    localStorage.setItem('matchPhone', matchPhone.value);
+  }
 });
