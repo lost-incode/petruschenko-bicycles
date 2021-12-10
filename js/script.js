@@ -1,8 +1,39 @@
 'use strict';
+
 var matchForm = document.querySelector('.match-form form');
 var matchName = matchForm.querySelector('#name');
 var matchPhone = matchForm.querySelector('#phone');
+
 var body = document.querySelector('.page__body');
+var navMain = document.querySelector('.main-nav');
+
+var navToggle = document.querySelector('.main-nav__toggle');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function () {
+  navMain.classList.toggle('main-nav--closed');
+  navMain.classList.toggle('main-nav--opened');
+  body.classList.toggle('overflow-hidden');
+});
+
+var smoothLinks = document.querySelectorAll('a[href^="#"]');
+smoothLinks.forEach(function (smoothLink) {
+  smoothLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    var id = smoothLink.getAttribute('href');
+    var linkSelector = 'a[name="' + id.slice(1, id.length) + '"]';
+
+    document.querySelector(linkSelector).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+
+    navMain.classList.toggle('main-nav--closed');
+    navMain.classList.toggle('main-nav--opened');
+    body.classList.toggle('overflow-hidden');
+  });
+});
 
 var isStorageSupport = true;
 var storageName = '';
@@ -30,33 +61,4 @@ matchForm.addEventListener('submit', function () {
     localStorage.setItem('matchName', matchName.value);
     localStorage.setItem('matchPhone', matchPhone.value);
   }
-});
-
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
-
-navMain.classList.remove('main-nav--nojs');
-
-navToggle.addEventListener('click', function () {
-  navMain.classList.toggle('main-nav--closed');
-  navMain.classList.toggle('main-nav--opened');
-  body.classList.toggle('overflow-hidden');
-});
-
-var smoothLinks = document.querySelectorAll('a[href^="#"]');
-smoothLinks.forEach(function (smoothLink) {
-  smoothLink.addEventListener('click', function (e) {
-    e.preventDefault();
-    var id = smoothLink.getAttribute('href');
-    var linkSelector = 'a[name="' + id.slice(1, id.length) + '"]';
-
-    document.querySelector(linkSelector).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-
-    navMain.classList.toggle('main-nav--closed');
-    navMain.classList.toggle('main-nav--opened');
-    body.classList.toggle('overflow-hidden');
-  });
 });
